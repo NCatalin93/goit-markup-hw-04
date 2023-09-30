@@ -384,6 +384,52 @@ img {
     line-height: 1.17187;
     text-align: center;
 }
+
+/* Customers section */
+.customers {
+    padding-bottom: 94px;
+}
+
+.customers h2 {
+    font-size: 36px;
+    line-height: 1.17194;
+    text-align: center;
+    font-weight: var(--titles-font-weight);
+    margin-bottom: 50px;
+}
+
+.customers-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.customers-cards a {
+    display: flex;
+    flex-grow: 1;
+    padding: 16px 32px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.customers a:hover,
+.customers a:focus {
+    border: 1px solid var(--highlighting-color);
+}
+
+.customers .icon {
+    flex-grow: 1;
+    width: 106px;
+    height: 60px;
+    fill: #AFB1B8;
+}
+
+.customers .icon:hover,
+.customers .icon:focus {
+    fill: var(--highlighting-color);
+}
+
 /* Footer section */
 
 .global-footer .container {
