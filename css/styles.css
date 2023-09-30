@@ -143,6 +143,7 @@ img {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    fill: var(--backup-text-color);
 }
 .container-contact .e-mail .icon {
     width: 16px;
@@ -218,7 +219,8 @@ img {
 
 .values .section,
 .activities .section,
-.team-members .section{
+.team-members .section,
+.customers .section {
     padding-top: 94px;
 }
 
@@ -437,6 +439,20 @@ img {
     margin: 12px;
 }
 
+.global-footer .container .footer-social-links .social-media a {
+    background-color:rgba(255, 255, 255, 0.1);;
+    fill: #ffffff;
+    border-radius: 50%;
+}
+
+
+.global-footer .container .footer-social-links .social-media a:hover,
+.global-footer .container .footer-social-links .social-media a:focus{
+    background-color: var(--highlighting-color);
+    fill: #ffffff;
+    border-radius: 50%;
+}
+
 .global-footer-adress a {
     text-decoration: none;
     width: 231px;
@@ -508,6 +524,13 @@ img {
     background-color: var(--highlighting-color)
 }
 
+.portfolio-page .closed-buttons button:hover,
+.portfolio-page .closed-buttons button:focus {
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
 .portfolio-page h3 {
     font-size: 18px;
     font-weight: var(--titles-font-weight);
@@ -551,4 +574,10 @@ img {
 .description-item {
     padding: 20px 24px;
     gap: 4px;
+}
+
+.portfolio-page .section .opened-buttons .item:hover {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
