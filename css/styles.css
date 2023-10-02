@@ -157,8 +157,9 @@ img {
     margin-right: 10px;
 }
 
-.container-contact .icon:hover,
-.container-contact .icon:focus {
+.container-contact a:hover,
+.container-contact a:focus {
+    color: var(--highlighting-color);
     fill: var(--highlighting-color);
 }
 
@@ -168,10 +169,6 @@ img {
     color: var(--backup-text-color);
 }
 
-.contact-adress:hover,
-.contact-adress:focus {
-    color: var(--highlighting-color);
-}
 
 /* Head section */ 
 /* Main head sub-section */
@@ -329,14 +326,20 @@ img {
 }
 
 .team-members .section .member-list li{
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
+.team-members .section .member-list li img {
+    width: max-content;
+}
+
 .team-members .section .item {
-    padding: 30px 61.5px;
+    padding: 30px 61.5px 16px 61.6px;
     background-color: #ffffff;
     border-radius: 0 0 4px 4px;
 }
@@ -411,22 +414,18 @@ img {
     padding: 16px 32px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-}
-
-.customers a:hover,
-.customers a:focus {
-    border: 1px solid var(--highlighting-color);
+    fill: #AFB1B8;
 }
 
 .customers .icon {
     flex-grow: 1;
     width: 106px;
     height: 60px;
-    fill: #AFB1B8;
 }
 
-.customers .icon:hover,
-.customers .icon:focus {
+.customers .item:hover,
+.customers .item:focus {
+    border: 1px solid var(--highlighting-color);
     fill: var(--highlighting-color);
 }
 
@@ -543,10 +542,6 @@ img {
 .global-footer .full-adress a:focus {
     color: var(--highlighting-color);
 }
-
-
-
-
 
 /* Portfolio page */
 /* Buttons sub-section */
