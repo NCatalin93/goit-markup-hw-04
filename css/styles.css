@@ -173,7 +173,7 @@ img {
 /* Head section */ 
 /* Main head sub-section */
 .main-head {
-    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4),var(--fill-color)) , url("../images/bg-image.jpg");
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.1),var(--fill-color)) , url("../images/bg-image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -335,7 +335,7 @@ img {
 }
 
 .team-members .section .member-list li img {
-    width: max-content;
+    width: 100%;
 }
 
 .team-members .section .item {
@@ -607,9 +607,13 @@ img {
 }
 
 .section .opened-buttons .item {
-    flex-basis: calc((100%-60px)/3);
+    flex-basis: calc((100%-60px) / 3);
     border: 1px solid #EEEEEE;
     flex-grow: 1;
+}
+
+.section .opened-buttons .item img {
+    width:100%;
 }
 
 .description-item {
