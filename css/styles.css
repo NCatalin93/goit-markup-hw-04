@@ -609,7 +609,6 @@ img {
 .section .opened-buttons .item {
     flex-basis: calc((100%-60px) / 3);
     border: 1px solid #EEEEEE;
-    flex-grow: 1;
 }
 
 .section .opened-buttons .item img {
