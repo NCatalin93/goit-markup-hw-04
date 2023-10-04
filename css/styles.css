@@ -601,13 +601,14 @@ img {
 
 .section .opened-buttons {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: center;
     gap: 30px;
     padding: 0;
 }
 
 .section .opened-buttons .item {
-    flex-basis: calc((100%-60px) / 3);
+    flex: 0 1 31%;
     border: 1px solid #EEEEEE;
 }
 
